@@ -10,7 +10,9 @@
                     {% include "sidenav.html" %}
                 </div>
                 <div class="col-12 col-md-8 col-lg-9 main-box">
+                    <h1>{{ title }}</h1>
                     {{ content }}
+                    <p>Published on: {{ date | date: "%b %d, %Y" }}</p>
                 </div>
             </div>
         </div>

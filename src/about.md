@@ -1,9 +1,9 @@
 ---
 layout: default
-title: home
+title: about
 eleventyNavigation:
   key: {{ title }}
 ---
 
-# welcome
+# about
 ## this is markdown
