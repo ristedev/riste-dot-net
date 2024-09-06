@@ -1,3 +1,3 @@
-# 11ty template
+# my eleventy blog
 
-https://www.11ty.dev/
+testing out all of eleventy's features
