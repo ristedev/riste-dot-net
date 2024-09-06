@@ -9,8 +9,10 @@ excludeFromPosts: true
 {% for post in collections.post reversed %}
 {% unless post.data.excludeFromPosts %}
 # [{{ post.data.title }}]({{ post.url }})
-### {{ post.content | truncatewords: 40 }}
+<p>{{ post.content | truncatewords: 50 }}</p>
 Published on: {{ post.data.date | date: "%b %d, %Y" }}
-<hr>
+
+---
+
 {% endunless %}
 {% endfor %}

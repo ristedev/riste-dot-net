@@ -1,6 +1,6 @@
 body {
     background-color: #191919;
-    color: #fafafa;
+    color: #a6a6a6;
 }
 
 h1 {
@@ -13,10 +13,6 @@ h1 a {
 
 h1 a:hover {
     color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
-}
-
-p {
-    color: #a6a6a6;
 }
 
 nav ul li{
