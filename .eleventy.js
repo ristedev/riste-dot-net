@@ -10,10 +10,26 @@ module.exports = function (eleventyConfig) {
     return parseInt(value, 10) + parseInt(amount, 10);
   });
 
-  // Log all collections after the build process
-  // eleventyConfig.on("afterBuild", function (collections) {
-  //   console.log("Collections:", collections.post);
-  // });
+  // create a categories collection
+  eleventyConfig.addCollection("categories", function(collectionApi) {
+    const allPosts = collectionApi.getAll();
+    const categories = {};
+
+    allPosts.forEach(post => {
+      if (post.data.category) {
+        if (!categories[post.data.category]) {
+          categories[post.data.category] = [];
+        }
+        categories[post.data.category].push(post);
+      }
+    });
+
+    // return an array of category names
+    return Object.keys(categories).map(category => ({
+      name: category,
+      slug: category.toLowerCase().replace(/\s+/g, '-')
+    }));
+  });
 
   return {
     templateFormats: ["liquid", "md", "html"],

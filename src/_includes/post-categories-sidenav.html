@@ -1,22 +1,13 @@
-{% assign categoryList = "" %}
-
 <aside>
   <nav>
     <ul>
-      <li>categories</li>
-      {% for post in collections.all %}
-        {% if post.data.category %}
-          {% if categoryList contains post.data.category %}
-            {% continue %}
-          {% else %}
-            {% assign categoryList = categoryList | append: post.data.category | append: "," %}
-            <li>
-              <a href="/posts/{{ post.data.category }}/" class="{% if post.data.category == currentCategory %}active{% endif %}">
-                {{ post.data.category }}
-              </a>
-            </li>
-          {% endif %}
-        {% endif %}
+      <li>Categories</li>
+      {% for category in collections.categories %}
+        <li>
+          <a href="/category/{{ category.slug }}/" class="{% if category.name == currentCategory %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </nav>
