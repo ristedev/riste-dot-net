@@ -60,3 +60,28 @@ pre:has(code) {
         margin-top: 5%;
     }
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.pagination a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.pagination a:hover {
+    background-color: #343434;
+  }

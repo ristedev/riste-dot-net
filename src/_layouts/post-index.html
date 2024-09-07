@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        {% include "head.html" %}
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    {% include "sidenav.html" %}
+                    {% include "post-categories-sidenav.html" %}
+                </div>
+                <div class="col-12 col-md-8 col-lg-9 main-box">
+                    <h1>{{ title }}</h1>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
