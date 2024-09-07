@@ -4,11 +4,8 @@
             <li>
                 my blog
             </li>
-            <li>
-              <a href="/">home</a>
-            </li>
           {% for page in collections.all %}
-            {% if page.url !="/" and page.data.eleventyNavigation %}
+            {% if page.data.eleventyNavigation %}
               <li><a href="{{ page.url }}">{{ page.data.eleventyNavigation.title | default: page.data.title }}</a></li>
             {% endif %}
           {% endfor %}
