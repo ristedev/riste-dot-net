@@ -5,6 +5,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("assets");
 
+  eleventyConfig.addFilter("plus", function(value, amount) {
+    return parseInt(value, 10) + parseInt(amount, 10);
+  });
+
   // Log all collections after the build process
   // eleventyConfig.on("afterBuild", function (collections) {
   //   console.log("Collections:", collections.post);
