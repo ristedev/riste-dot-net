@@ -1,22 +1,22 @@
-{% assign categories = "" | split: "," %}
-
-{% for post in collections.all %}
-  {% if post.data.category %}
-    {% assign category = post.data.category %}
-    {% unless categories contains category %}
-      {% assign categories = categories | push: category %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
+{% assign categoryList = "" %}
 
 <aside>
   <nav>
     <ul>
       <li>categories</li>
-      {% for category in categories %}
-        <li><a href="/posts/categories/{{ category | slug }}">{{ category }}</a></li>
-      {% else %}
-        <li>No categories available.</li>
+      {% for post in collections.all %}
+        {% if post.data.category %}
+          {% if categoryList contains post.data.category %}
+            {% continue %}
+          {% else %}
+            {% assign categoryList = categoryList | append: post.data.category | append: "," %}
+            <li>
+              <a href="/posts/{{ post.data.category }}/" class="{% if post.data.category == currentCategory %}active{% endif %}">
+                {{ post.data.category }}
+              </a>
+            </li>
+          {% endif %}
+        {% endif %}
       {% endfor %}
     </ul>
   </nav>
