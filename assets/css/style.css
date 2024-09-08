@@ -7,12 +7,8 @@ h1 {
     margin-bottom: 2.5%;
 }
 
-h1 a {
-    color: #fafafa;
-}
-
-h1 a:hover {
-    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+h1 a, .main-box a {
+    color: #fafafa !important;
 }
 
 nav ul li{
