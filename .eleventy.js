@@ -12,16 +12,20 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("sortedNavigation", function(collection) {
     return collection.getAllSorted()
-      .filter(item => item.data.eleventyNavigation) // Filter to include only items with eleventyNavigation
-      .sort((a, b) => (a.data.eleventyNavigation.order || 0) - (b.data.eleventyNavigation.order || 0)); // Sort by order
+      .filter(function(item) {
+        return item.data.eleventyNavigation; // Filter to include only items with eleventyNavigation
+      })
+      .sort(function(a, b) {
+        return (a.data.eleventyNavigation.order || 0) - (b.data.eleventyNavigation.order || 0); // Sort by order
+      });
   });
 
   // create a categories collection
   eleventyConfig.addCollection("categories", function(collectionApi) {
-    const allPosts = collectionApi.getAll();
-    const categories = {};
+    var allPosts = collectionApi.getAll();
+    var categories = {};
 
-    allPosts.forEach(post => {
+    allPosts.forEach(function(post) {
       if (post.data.category) {
         if (!categories[post.data.category]) {
           categories[post.data.category] = [];
@@ -31,10 +35,12 @@ module.exports = function (eleventyConfig) {
     });
 
     // return an array of category names
-    return Object.keys(categories).map(category => ({
-      name: category,
-      slug: category.toLowerCase().replace(/\s+/g, '-')
-    }));
+    return Object.keys(categories).map(function(category) {
+      return {
+        name: category,
+        slug: category.toLowerCase().replace(/\s+/g, '-')
+      };
+    });
   });
 
   return {
