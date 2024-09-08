@@ -1,7 +1,7 @@
 <aside>
   <nav>
     <ul>
-      <li>Categories</li>
+      <li>categories</li>
       {% for category in collections.categories %}
         <li>
           <a href="/category/{{ category.slug }}/" class="{% if category.name == currentCategory %}active{% endif %}">
