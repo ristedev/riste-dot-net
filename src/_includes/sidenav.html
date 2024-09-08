@@ -1,3 +1,5 @@
+{% assign currentPage = page.url %}
+
 <aside>
     <nav>
         <ul>
@@ -6,7 +8,11 @@
             </li>
           {% for page in collections.all %}
             {% if page.data.eleventyNavigation %}
-              <li><a href="{{ page.url }}">{{ page.data.eleventyNavigation.title | default: page.data.title }}</a></li>
+              <li>
+                <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">
+                  {{ page.data.eleventyNavigation.title | default: page.data.title }}
+                </a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>
