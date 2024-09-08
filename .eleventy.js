@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -11,6 +13,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("plus", function(value, amount) {
     return parseInt(value, 10) + parseInt(amount, 10);
+  });
+
+  // Shortcode for inline SVG
+  eleventyConfig.addShortcode("icon", function(name) {
+    const iconPath = path.join("assets", "icons", `${name}.svg`);
+    return fs.readFileSync(iconPath, "utf8");
   });
 
   eleventyConfig.addCollection("sortedNavigation", function(collection) {

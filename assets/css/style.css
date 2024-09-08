@@ -1,6 +1,7 @@
 body {
     background-color: #191919;
     color: #a6a6a6;
+    font-size: 18px;
 }
 
 h1 {
@@ -72,4 +73,9 @@ nav ul li a:hover, nav ul li a.active {
 
 .pagination a:hover {
     background-color: #343434;
+}
+
+svg {
+    display: inline-flex;
+    margin-bottom: 2.5px;
 }
