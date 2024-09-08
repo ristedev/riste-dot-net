@@ -9,6 +9,7 @@ eleventyNavigation:
   
 - [collections using tags](https://www.11ty.dev/docs/collections/)
 - [custom filtering & sorting](https://www.11ty.dev/docs/collections/#advanced-custom-filtering-and-sorting)
+- [shortcodes](https://www.11ty.dev/docs/shortcodes/)
 - [pagination](https://www.11ty.dev/docs/pagination/)
 
 {% icon "puzzle-piece" %} plugins
