@@ -1,0 +1,27 @@
+#search {
+    margin-bottom: 2.5%;
+}
+
+.pagefind-ui__result-thumb {
+    display: none !important;
+}
+
+.pagefind-ui__message, .pagefind-ui__result-excerpt {
+    color: #a6a6a6 !important;
+}
+
+.pagefind-ui__result:hover {
+    background-color: #262626;
+}
+
+.pagefind-ui__result-link {
+    text-decoration: underline !important;
+}
+
+.pagefind-ui__result {
+    border-top: none !important;
+}
+
+.pagefind-ui__result-inner {
+    margin-left: 1% !important;
+}
