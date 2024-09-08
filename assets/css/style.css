@@ -37,14 +37,6 @@ nav ul li a:hover, nav ul li a.active {
     padding-left: 50px;
 }
 
-pre:has(code) {
-    background-color: #000;
-    color: #fafafa;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 @media screen and (max-width: 768px) {
     nav ul li{
         text-align: left;

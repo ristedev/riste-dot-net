@@ -7,7 +7,7 @@ tags: post
 ---
 Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
 
-```
+{% highlight js %}
 # Sample JavaScript code: Fetches a list of posts from a public API, handles errors, and logs the result to the console.
 
 // Function to fetch posts from an API with proper error handling
@@ -36,4 +36,4 @@ async function fetchPosts() {
 
 // Call the function to fetch the data
 fetchPosts();
-```
+{% endhighlight js %}
