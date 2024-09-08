@@ -2,7 +2,7 @@
 layout: default
 title: features
 eleventyNavigation:
-  key: {{ title }}
+  order: 2
 ---
 
 - eleventyNavigation plugin

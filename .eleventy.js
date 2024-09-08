@@ -10,6 +10,12 @@ module.exports = function (eleventyConfig) {
     return parseInt(value, 10) + parseInt(amount, 10);
   });
 
+  eleventyConfig.addCollection("sortedNavigation", function(collection) {
+    return collection.getAllSorted()
+      .filter(item => item.data.eleventyNavigation) // Filter to include only items with eleventyNavigation
+      .sort((a, b) => (a.data.eleventyNavigation.order || 0) - (b.data.eleventyNavigation.order || 0)); // Sort by order
+  });
+
   // create a categories collection
   eleventyConfig.addCollection("categories", function(collectionApi) {
     const allPosts = collectionApi.getAll();

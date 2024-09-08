@@ -2,7 +2,7 @@
 layout: default
 title: home
 eleventyNavigation:
-  key: {{ title }}
+  order: 1
 ---
 
 ## welcome

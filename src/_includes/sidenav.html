@@ -1,20 +1,16 @@
 {% assign currentPage = page.url %}
 
 <aside>
-    <nav>
-        <ul>
-            <li>
-                my blog
-            </li>
-          {% for page in collections.all %}
-            {% if page.data.eleventyNavigation %}
-              <li>
-                <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">
-                  {{ page.data.eleventyNavigation.title | default: page.data.title }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </nav>      
+  <nav>
+    <ul>
+      <li>my blog</li>
+      {% for page in collections.sortedNavigation %}
+        <li>
+          <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">
+            {{ page.data.eleventyNavigation.title | default: page.data.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>    
 </aside>
