@@ -16,6 +16,7 @@
 
 .pagefind-ui__result-link {
     text-decoration: underline !important;
+    color: #fafafa !important;
 }
 
 .pagefind-ui__result {
