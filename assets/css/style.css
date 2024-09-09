@@ -1,15 +1,26 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #191919;
     color: #a6a6a6;
     font-size: 18px;
+}
+
+.container {
+    flex: 1;
 }
 
 h1 {
     margin-bottom: 2.5%;
 }
 
-h1 a, .main-box a {
-    color: #fafafa !important;
+a {
+    color: #fafafa;
 }
 
 nav ul li{
@@ -25,7 +36,6 @@ nav ul li:first-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #fafafa;
     padding: 5px;
 }
 
@@ -61,7 +71,6 @@ nav ul li a:hover, nav ul li a.active {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #fafafa;
     border: 1px solid #fafafa;
     margin-right: 5px;
     text-decoration: none;
@@ -78,4 +87,16 @@ nav ul li a:hover, nav ul li a.active {
 svg {
     display: inline-flex;
     margin-bottom: 2.5px;
+}
+
+footer {
+    background-color: #262626;
+}
+
+footer p {
+    margin-bottom: 0rem;
+}
+
+footer a {
+    text-decoration: none;
 }
