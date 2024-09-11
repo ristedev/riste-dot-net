@@ -89,6 +89,10 @@ svg {
     margin-bottom: 2.5px;
 }
 
+pre {
+    background-color: #000 !important;
+}
+
 footer {
     background-color: #262626;
 }
