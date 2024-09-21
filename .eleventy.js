@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
     return fs.readFileSync(iconPath, "utf8");
   });
 
+  // sorted navigation collection
   eleventyConfig.addCollection("sortedNavigation", function(collection) {
     return collection.getAllSorted()
       .filter(function(item) {
@@ -31,7 +32,14 @@ module.exports = function (eleventyConfig) {
       });
   });
 
-  // create a categories collection
+  // sorted posts collection
+  eleventyConfig.addCollection("sortedPosts", function(collectionApi) {
+    return collectionApi.getAll()
+      .filter(post => post.data.tags && post.data.tags.includes("post"))
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+  });
+
+  // categories collection
   eleventyConfig.addCollection("categories", function(collectionApi) {
     var allPosts = collectionApi.getAll();
     var categories = {};

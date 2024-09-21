@@ -5,13 +5,13 @@ eleventyNavigation:
   order: 3
 excludeFromPosts: true
 pagination:
-  data: collections.post
+  data: collections.sortedPosts
   size: 3
   alias: "post"
 permalink: "/posts/page/{{ pagination.pageNumber | plus: 1 }}/"
 ---
 
-{% for post in pagination.items reversed %}
+{% for post in pagination.items %}
 # [{{ post.data.title }}]({{ post.url }})
 <p>{{ post.content | truncatewords: 50 }}</p>
 Published on: {{ post.data.date | date: "%b %d, %Y" }}
