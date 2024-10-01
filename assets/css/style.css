@@ -57,6 +57,7 @@ nav ul li a:hover, nav ul li a.active {
     }
     .main-box {
         margin-top: 5%;
+        padding: 0 5% 0;
     }
 }
 
