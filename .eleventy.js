@@ -40,11 +40,11 @@ module.exports = function (eleventyConfig) {
   });
 
   // categories collection
-  eleventyConfig.addCollection("categories", function(collectionApi) {
-    var allPosts = collectionApi.getAll();
-    var categories = {};
+  eleventyConfig.addCollection("categories", (collectionApi) => {
+    const allPosts = collectionApi.getAll();
+    const categories = {};
 
-    allPosts.forEach(function(post) {
+    allPosts.forEach((post) => {
       if (post.data.category) {
         if (!categories[post.data.category]) {
           categories[post.data.category] = [];
@@ -54,12 +54,10 @@ module.exports = function (eleventyConfig) {
     });
 
     // return an array of category names
-    return Object.keys(categories).map(function(category) {
-      return {
-        name: category,
-        slug: category.toLowerCase().replace(/\s+/g, '-')
-      };
-    });
+    return Object.keys(categories).map((category) => ({
+      name: category,
+      slug: category.toLowerCase().replace(/\s+/g, '-')
+    }));
   });
 
   return {
