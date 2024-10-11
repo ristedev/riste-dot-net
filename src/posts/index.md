@@ -21,13 +21,6 @@ permalink: "/posts/page/{{ pagination.pageNumber | plus: 1 }}/"
       <a class="post-preview-link" href="{{ post.url }}">{{ post.data.title }}</a>
     </h3>
     <p class="post-preview-description">{{ post.data.excerpt }}</p>
-    <ul class="post-preview-tags" aria-label="Tags">
-      {% if post.data.category %}
-      <li>
-        <a href="/tags/{{ post.data.category | slugify }}/" class="post-preview-tag" aria-label="{{ post.data.category }}">#{{ post.data.category }}</a>
-      </li>
-      {% endif %}
-    </ul>
   </article>
 {% endfor %}
 </div>
