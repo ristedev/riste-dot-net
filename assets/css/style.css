@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('/fonts/SourceSans3-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url('/fonts/SourceSans3-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -8,6 +22,7 @@ body {
     flex-direction: column;
     background-color: #191919;
     color: #a6a6a6;
+    font-family: 'Source Sans 3', sans-serif;
     font-size: 18px;
 }
 
