@@ -1,6 +1,6 @@
 ---
 layout: post-index
-title: posts
+title: Posts
 eleventyNavigation:
   order: 3
 excludeFromPosts: true
