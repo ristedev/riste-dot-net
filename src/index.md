@@ -1,12 +1,12 @@
 ---
 layout: default
-title: home
+title: Home
 eleventyNavigation:
   order: 1
 ---
 
-## welcome
+# Hi I'm Riste
 
-#### this project is a test to create a blog with eleventy, experiment with its features and see everything it has to offer
+### Welcome to my little corner of the internet.
 
-check out the [features page](/features) to see a list of all of the features implemented so far
+Check out the [features page](/features) to see a list of all of the features implemented on this site
