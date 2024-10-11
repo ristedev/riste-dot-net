@@ -38,6 +38,10 @@ h1 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.25rem;
+}
+
 a {
     color: #dbdbdb;
 }
@@ -118,4 +122,66 @@ footer p {
 
 .codify {
     font-family: 'Source Code Pro', monospace;
+}
+
+article a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.post-preview {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-preview-date {
+    font-size: 1rem;
+    color: #666;
+}
+
+.post-preview-title {
+    font-weight: bold;
+    margin: 5px 0;
+    text-decoration: none !important;
+}
+
+.post-preview-description {
+    margin: 0;
+    color: #dbdbdb;
+    font-size: 1rem;
+}
+
+.post-preview-tags {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.post-preview-tag {
+    color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+    .post-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -1,23 +1,36 @@
 ---
 layout: post-index
-title: Posts
+title: <ristedev> Posts
 eleventyNavigation:
   order: 3
 excludeFromPosts: true
 pagination:
   data: collections.sortedPosts
-  size: 3
+  size: 6
   alias: "post"
 permalink: "/posts/page/{{ pagination.pageNumber | plus: 1 }}/"
 ---
 
+<div class="post-grid">
 {% for post in pagination.items %}
-# [{{ post.data.title }}]({{ post.url }})
-<p>{{ post.content | truncatewords: 50 }}</p>
-Published on: {{ post.data.date | date: "%b %d, %Y" }}
-
----
+  <article class="post-preview">
+    <div class="post-preview-date">
+      <time datetime="{{ post.data.date | date: '%Y-%m-%d' }}">{{ post.data.date | date: "%B %d, %Y" }}</time>
+    </div>
+    <h3 class="post-preview-title">
+      <a class="post-preview-link" href="{{ post.url }}">{{ post.data.title }}</a>
+    </h3>
+    <p class="post-preview-description">{{ post.data.excerpt }}</p>
+    <ul class="post-preview-tags" aria-label="Tags">
+      {% if post.data.category %}
+      <li>
+        <a href="/tags/{{ post.data.category | slugify }}/" class="post-preview-tag" aria-label="{{ post.data.category }}">#{{ post.data.category }}</a>
+      </li>
+      {% endif %}
+    </ul>
+  </article>
 {% endfor %}
+</div>
 
 <div class="pagination">
   {% if pagination.pageNumber > 0 %}
