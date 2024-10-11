@@ -3,7 +3,7 @@
 <aside>
   <nav>
     <ul>
-      <li>my blog</li>
+      <li class="fw-bold codify">&lt;ristedev&gt;</li>
       {% for page in collections.sortedNavigation %}
         <li>
           <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">

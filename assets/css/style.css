@@ -20,8 +20,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #191919;
-    color: #a6a6a6;
+    background-color: #0f0f0f;
+    color: #dbdbdb;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 18px;
 }
@@ -30,12 +30,16 @@ body {
     flex: 1;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
 h1 {
-    margin-bottom: 2.5%;
+    font-weight: bold;
 }
 
 a {
-    color: #fafafa;
+    color: #dbdbdb;
 }
 
 nav ul li{
@@ -45,18 +49,13 @@ nav ul li{
     text-align: right;
 }
 
-nav ul li:first-child {
-    font-size: x-large;
-}
-
 nav ul li a {
     text-decoration: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 nav ul li a:hover, nav ul li a.active {
-    background-color: #fafafa;
-    color: #191919;
+    background-color: #333333;
 }
 
 .main-box {
@@ -117,6 +116,6 @@ footer p {
     margin-bottom: 0rem;
 }
 
-footer a {
-    text-decoration: none;
+.codify {
+    font-family: 'Source Code Pro', monospace;
 }
