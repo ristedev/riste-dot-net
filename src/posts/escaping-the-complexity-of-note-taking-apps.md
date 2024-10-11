@@ -4,6 +4,7 @@ title: Escaping the Complexity of Note-Taking Apps
 date: 2024-10-02
 category: tech
 tags: post
+excerpt: How I improved my note-taking efficiency without a dedicated app.
 ---
 
 Recently, I realized that my reliance on multiple note-taking apps was complicating my workflow and consuming too much of my time. After spending countless hours testing various apps, transferring notes from one to another, converting them to different formats, and backing everything up in multiple places, I decided it was time to streamline my approach and embrace digital minimalism.
