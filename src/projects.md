@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Features
+title: Projects
 eleventyNavigation:
   order: 2
 ---
