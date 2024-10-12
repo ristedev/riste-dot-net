@@ -13,7 +13,7 @@ async function fetchLastCommit() {
   const formattedDate = commitDate.toLocaleString('en-US', options); // Format in the specified format
 
   // Update the inner HTML of the paragraph with the latest commit date and link
-  document.getElementById('last-updated').innerHTML = `Last built on <a href="https://github.com/ristedev/blog/commit/${commitHash}" target="_blank">${formattedDate} UTC</a>`;
+  document.getElementById('last-updated').innerHTML = `<a href="https://github.com/ristedev/blog/commit/${commitHash}" target="_blank">Last built on ${formattedDate} UTC</a>`;
 }
 
 // Call the function to fetch the latest commit
