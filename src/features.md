@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <ristedev> Features
+title: Features
 eleventyNavigation:
   order: 2
 ---

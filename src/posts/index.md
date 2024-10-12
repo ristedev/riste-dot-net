@@ -1,6 +1,6 @@
 ---
 layout: post-index
-title: <ristedev> Posts
+title: Blog
 eleventyNavigation:
   order: 3
 excludeFromPosts: true
