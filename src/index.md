@@ -1,12 +1,12 @@
 ---
 layout: default
-title: <ristedev> Home
+title: Riste Stojanov
 eleventyNavigation:
   order: 1
 ---
 
-# Hi I'm Riste
+# Hello, I'm Riste!
 
-### Welcome to my little corner of the internet.
+## Webgineer & privacy enthusiast
 
 Check out the [features page](/features) to see a list of all of the features implemented on this site
