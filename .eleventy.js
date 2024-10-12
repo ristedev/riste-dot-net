@@ -60,6 +60,11 @@ module.exports = function (eleventyConfig) {
     }));
   });
 
+  // projects collection
+  eleventyConfig.addCollection("projects", function(collectionApi) {
+    return collectionApi.getAll().filter(item => item.data.tags && item.data.tags.includes("project"));
+  });
+
   return {
     templateFormats: ["liquid", "md", "html"],
     dir: {
