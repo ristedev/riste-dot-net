@@ -1,16 +1,28 @@
-{% assign currentPage = page.url %}
-
 <aside>
-  <nav>
+  <nav class="navbar">
     <ul>
-      <li class="codify">&lt;ristedev&gt;</li>
+      <li class="navbar-logo">
+        <a href="/">Riste Stojanov</a>
+      </li>
       {% for page in collections.sortedNavigation %}
-        <li>
-          <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">
-            {{ page.data.eleventyNavigation.title | default: page.data.title }}
-          </a>
-        </li>
+        {% unless page.url == "/" %}
+          <li>
+            <a href="{{ page.url }}" class="{% if page.url == currentPage %}active{% endif %}">
+              {{ page.data.eleventyNavigation.title | default: page.data.title }}
+            </a>
+          </li>
+        {% endunless %}
       {% endfor %}
+    </ul>
+    <ul class="info-section">
+      <li class="icons">
+        <a href="https://github.com/ristedev" class="icon">{% icon "github" %}</a>
+        <a href="#" class="icon">{% icon "rss" %}</a>
+        <a href="#" class="icon">{% icon "mail" %}</a>
+      </li>
+      <li id="last-updated">Loading...</li>
     </ul>
   </nav>    
 </aside>
+
+<script src="/assets/js/fetchLatestCommit.js" defer></script>
