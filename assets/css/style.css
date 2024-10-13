@@ -161,8 +161,8 @@ pre {
     text-decoration: none;
 }
 
-.card-preview:hover .card-preview-title {
-    text-decoration: underline !important;
+.card-preview:hover {
+    background-color: #242729;
 }
 
 .card-preview-date {
