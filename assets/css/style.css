@@ -143,10 +143,6 @@ pre {
     background-color: #000 !important;
 }
 
-article a {
-    color: #ffffff;
-}
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -159,7 +155,7 @@ article a {
     flex-direction: column;
     justify-content: space-between;
     background: #1f1f1f;
-    padding: 12px 20px;
+    padding: 16px 20px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -185,7 +181,6 @@ article a {
 }
 
 .card-preview-description {
-    margin: 0;
     color: #dbdbdb;
     font-size: .875rem;
 }
