@@ -66,7 +66,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["liquid", "md", "html"],
+    templateFormats: ["liquid", "md", "html", "txt"],
     dir: {
       input: "src",
       output: "_site",
