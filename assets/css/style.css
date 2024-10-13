@@ -21,12 +21,9 @@
 
 html, body {
     margin: 0;
-    height: 100%;
-}
-
-body {
+    min-height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     background-color: #0f0f0f;
     color: #dbdbdb;
     font-family: 'Source Sans 3', sans-serif;
@@ -34,8 +31,42 @@ body {
 }
 
 .container {
-    flex: 1;
+    display: flex;
+    margin: 20px;
     max-width: 1024px;
+    width: 100%;
+}
+
+@media (min-width: 1025px) {
+    .container {
+        min-width: 1024px;
+    }
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+}
+
+
+main {
+    width: 75%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, main {
+        width: 100%;
+    }
+    .sidebar {
+        padding: 10px 0;
+    }
+    main {
+        padding: 10px 0;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,10 +95,9 @@ a {
 }
 
 .navbar ul {
-    padding-left: 0rem;
+    padding-left: 0;
     font-weight: 700;
     list-style: none;
-    margin-bottom: 0rem;
 }
 
 .navbar ul li{
@@ -81,19 +111,6 @@ a {
 
 .navbar ul li a:hover, nav ul li a.active {
     color: #50aefa;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar ul li{
-        text-align: left;
-    }
-    .navbar ul li a {
-        padding: 5px 5px 5px 0;
-    }
-    .main-box {
-        margin-top: 5%;
-        padding: 0 5% 0;
-    }
 }
 
 .navbar-brand {
@@ -118,9 +135,8 @@ a {
     align-items: center;
     justify-content: center;
     border: 1px solid #fafafa;
-    margin-right: 5px;
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 0px 15px;
     border-radius: 4px;
     height: 40px;
     font-weight: bold;
@@ -130,9 +146,21 @@ a {
     background-color: #343434;
 }
 
+.pagination p {
+    margin: 0;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2.5rem auto;
+}
+
+
 svg {
     display: inline-flex;
-    margin-bottom: 2.5px;
+    vertical-align: bottom;
 }
 
 .icon {
