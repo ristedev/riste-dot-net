@@ -5,20 +5,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-tomorrow.min.css" integrity="sha512-kSwGoyIkfz4+hMo5jkJngSByil9jxJPKbweYec/UgS+S1EgE45qm4Gea7Ks2oxQ7qiYyyZRn66A9df2lMtjIsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    {% assign currentCategory = category %}
-                    {% include "sidenav.html" %}
-                </div>
-                <div class="col-12 col-md-8 col-lg-9 main-box">
-                    <h1>{{ title }}</h1>
-                    {{ content }}
-                    {% unless page.url == "/posts/" %}
-                      <p>Published on: {{ date | date: "%b %d, %Y" }}</p>
-                    {% endunless %}
-                </div>
+        <div class="container">
+            <div class="sidebar">
+                {% assign currentCategory = category %}
+                {% include "sidenav.html" %}
             </div>
+            <main>
+                <h1>{{ title }}</h1>
+                {{ content }}
+                {% unless page.url == "/posts/" %}
+                    <p>Published on: {{ date | date: "%b %d, %Y" }}</p>
+                {% endunless %}
+            </main>
         </div>
     </body>
 </html>

@@ -4,18 +4,16 @@
         {% include "head.html" %}
     </head>
     <body>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    {% include "sidenav.html" %}
-                </div>
-                <div class="col-12 col-md-8 col-lg-9 main-box">
-                    {% unless page.url == "/" %}
-                        <h1>{{ title }}</h1>
-                    {% endunless %}
-                    {{ content }}
-                </div>
+        <div class="container">
+            <div class="sidebar">
+                {% include "sidenav.html" %}
             </div>
+            <main>
+                {% unless page.url == "/" %}
+                    <h1>{{ title }}</h1>
+                {% endunless %}
+                {{ content }}
+            </main>
         </div>
     </body>
 </html>
