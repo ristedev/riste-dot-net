@@ -3,6 +3,7 @@
     src: url('/assets/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
     src: url('/assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -17,6 +19,7 @@
     src: url('/assets/fonts/EduAUVICWANTHand-VariableFont_wght.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
 }
 
 html, body {
