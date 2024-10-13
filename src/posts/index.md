@@ -13,15 +13,10 @@ permalink: "/posts/page/{{ pagination.pageNumber | plus: 1 }}/"
 
 <div class="card-grid">
 {% for post in pagination.items %}
-  <article class="card-preview">
-    <div class="card-preview-date">
-      <time datetime="{{ post.data.date | date: '%Y-%m-%d' }}">{{ post.data.date | date: "%B %d, %Y" }}</time>
-    </div>
-    <h3 class="card-preview-title">
-      <a class="card-preview-link" href="{{ post.url }}">{{ post.data.title }}</a>
-    </h3>
+  <a href="{{ post.url }}" class="card-preview">
+    <h3 class="card-preview-title">{{ post.data.title }}</h3>
     <p class="card-preview-description">{{ post.data.excerpt }}</p>
-  </article>
+  </a>
 {% endfor %}
 </div>
 
