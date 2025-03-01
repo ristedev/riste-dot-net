@@ -1,9 +1,9 @@
 <div class="card-grid">
-  {% for project in collections.projects %}
-  <a href="{{ project.data.url }}" class="card-preview">
-    <h3 class="card-preview-title">{{ project.data.title }}</h3>
-    <p class="card-preview-description">{{ project.data.description }}</p>
+  {%- for item in projectList.projects %}
+  <a href="{{ item.url }}" class="card-preview">
+    <h3 class="card-preview-title">{{ item.title }}</h3>
+    <p class="card-preview-description">{{ item.description }}</p>
     <span class="github-logo">{% icon "github" %}</span>
   </a>
-  {% endfor %}
+  {%- endfor %}
 </div>
