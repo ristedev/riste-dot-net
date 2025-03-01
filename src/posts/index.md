@@ -11,14 +11,8 @@ pagination:
 permalink: "/posts/page/{{ pagination.pageNumber | plus: 1 }}/"
 ---
 
-<div class="card-grid">
-{% for post in pagination.items %}
-  <a href="{{ post.url }}" class="card-preview">
-    <h3 class="card-preview-title">{{ post.data.title }}</h3>
-    <p class="card-preview-description">{{ post.data.excerpt }}</p>
-  </a>
-{% endfor %}
-</div>
+{% assign items = pagination.items %}
+{% include "card-grid.html" %}
 
 <div class="pagination">
   {% if pagination.pageNumber > 0 %}
