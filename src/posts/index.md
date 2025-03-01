@@ -2,7 +2,7 @@
 layout: post-index
 title: Blog
 eleventyNavigation:
-  order: 3
+  order: 2
 excludeFromPosts: true
 pagination:
   data: collections.sortedPosts
