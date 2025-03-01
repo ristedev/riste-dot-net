@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 eleventyNavigation:
-  order: 1
+  order: 2
 ---
-
-{% include "project-cards.html" %}
+{% assign items = projectList.projects %}
+{% include "card-grid.html" %}

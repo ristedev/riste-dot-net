@@ -1,9 +1,0 @@
-<div class="card-grid">
-  {%- for item in projectList.projects %}
-  <a href="{{ item.url }}" class="card-preview">
-    <h3 class="card-preview-title">{{ item.title }}</h3>
-    <p class="card-preview-description">{{ item.description }}</p>
-    <span class="github-logo">{% icon "github" %}</span>
-  </a>
-  {%- endfor %}
-</div>
