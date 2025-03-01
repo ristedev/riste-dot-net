@@ -5,14 +5,14 @@ permalink: /rss.xml
 <rss version="2.0">
   <channel>
     <title>{{ site.title }}</title>
-    <link>{{ site.siteUrl }}</link>
+    <link>{{ site.url }}</link>
     <description>{{ site.description }}</description>
     <language>{{ site.language }}</language>
     {% for post in collections.sortedPosts %}
     <item>
       <title>{{ post.data.title }}</title>
-      <link>{{ siteUrl }}{{ post.url | url }}</link>
-      <guid>{{ siteUrl }}{{ post.url | url }}</guid>
+      <link>{{ site.url }}{{ post.url | url }}</link>
+      <guid>{{ site.url }}{{ post.url | url }}</guid>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S +0000" }}</pubDate>
       <description>{{ post.data.excerpt | strip_html }}</description>
     </item>
