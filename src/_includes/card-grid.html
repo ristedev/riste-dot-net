@@ -1,11 +1,17 @@
 <div class="card-grid">
   {%- for item in items %}
-    <a href="{{ item.url }}" class="card-preview">
-      <h3 class="card-preview-title">{{ item.title }}</h3>
-      <p class="card-preview-description">{{ item.description }}</p>
-      {%- if items != selfHostedList.projects %}
-        <span class="github-logo">{% icon "github" %}</span>
-      {%- endif %}
-    </a>
+  <a href="{{ item.url }}" class="card-preview">
+    <!-- Use item.data.title/excerpt for paginated items, fallback to item.title/description for others. -->
+    <h3 class="card-preview-title">
+      {{ item.data.title | default: item.title }}
+    </h3>
+    <p class="card-preview-description">
+      {{ item.data.excerpt | default: item.description }}
+    </p>
+
+    {%- if items == projectList.projects %}
+    <span class="github-logo">{% icon "github" %}</span>
+    {%- endif %}
+  </a>
   {%- endfor %}
 </div>
