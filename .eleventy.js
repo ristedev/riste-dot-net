@@ -2,12 +2,14 @@ const fs = require("fs");
 const path = require("path");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const rssPlugin = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   
   // plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(rssPlugin);
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("robots.txt");
