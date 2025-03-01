@@ -1,4 +1,4 @@
-# riste.net
+# blog.riste.net
 
 My little corner of the internet. Built with [Eleventy](https://www.11ty.dev/), and hosted on [Cloudflare Pages](https://pages.cloudflare.com/). Below you'll find a summary of the key features, plugins, and integrations added so far.
 
@@ -14,6 +14,7 @@ My little corner of the internet. Built with [Eleventy](https://www.11ty.dev/), 
 
 - [Eleventy navigation](https://www.11ty.dev/docs/plugins/navigation/)
 - [Syntax highlighting](https://www.11ty.dev/docs/plugins/syntaxhighlight/)
+- [RSS](https://www.11ty.dev/docs/plugins/rss/)
 
 ## 🔗 Integrations
 
