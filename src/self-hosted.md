@@ -2,7 +2,7 @@
 layout: default
 title: Self-hosted
 eleventyNavigation:
-  order: 3
+  order: 4
 ---
 Explore the projects I’m currently self-hosting and maintaining
 
