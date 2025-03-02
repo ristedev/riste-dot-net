@@ -9,4 +9,10 @@ eleventyNavigation:
 
 ## Webgineer & privacy enthusiast
 
-Check out the [features page](/features) to see a list of all of the features implemented on this site
+Check out the [README](https://github.com/ristedev/blog#ristenet) to see a full list of features, plugins and integrations implemented on this site.
+
+### Let's work together
+
+Interested in a project? I’m here to help you turn your vision into reality. Whether you're looking for web development, design, or consulting services, let's talk!
+
+Reach out to me at [hi@riste.net](mailto:hi@riste.net) and tell me about your idea.
