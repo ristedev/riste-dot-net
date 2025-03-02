@@ -97,6 +97,10 @@ a {
     color: #ffffff;
 }
 
+main a:hover {
+    color: #d5d5d5;
+}
+
 .navbar ul {
     padding-left: 0;
     font-weight: 700;
