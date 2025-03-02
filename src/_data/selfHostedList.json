@@ -4,6 +4,11 @@
       "title": "Immich",
       "description": "Photo and video management solution hosted on a Raspberry Pi 4B",
       "url": "https://immich.app/"
+    },
+    {
+      "title": "pfSense",
+      "description": "A free and open source network firewall distribution, based on FreeBSD",
+      "url": "https://www.pfsense.org/"
     }
   ]
 }
