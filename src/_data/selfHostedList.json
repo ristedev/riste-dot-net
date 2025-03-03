@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Immich",
-      "description": "Photo and video management solution hosted on a Raspberry Pi 4B",
+      "description": "Photo and video management solution",
       "url": "https://immich.app/"
     },
     {
