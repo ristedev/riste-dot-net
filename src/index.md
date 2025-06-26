@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## Webgineer & privacy enthusiast
 
-Check out the [README](https://github.com/ristedev/blog#ristenet) to see a full list of features, plugins and integrations implemented on this site.
+Check out the [README](https://github.com/ristedev/riste-dot-net#ristenet) to see a full list of features, plugins and integrations implemented on this site.
 
 ### Let's work together
 

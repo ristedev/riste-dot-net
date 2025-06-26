@@ -1,5 +1,5 @@
 async function fetchLastCommit() {
-  const response = await fetch('https://api.github.com/repos/ristedev/blog/commits/main');
+  const response = await fetch('https://api.github.com/repos/ristedev/riste-dot-net/commits/main');
   if (!response.ok) {
       document.getElementById('last-updated').innerText = 'Error fetching commit data.';
       return;
@@ -13,7 +13,7 @@ async function fetchLastCommit() {
   const formattedDate = commitDate.toLocaleString('en-US', options); // Format in the specified format
 
   // Update the inner HTML of the paragraph with the latest commit date and link
-  document.getElementById('last-updated').innerHTML = `<a href="https://github.com/ristedev/blog/commit/${commitHash}" target="_blank">Last built on ${formattedDate} UTC</a>`;
+  document.getElementById('last-updated').innerHTML = `<a href="https://github.com/ristedev/riste-dot-net/commit/${commitHash}" target="_blank">Last built on ${formattedDate} UTC</a>`;
 }
 
 // Call the function to fetch the latest commit
