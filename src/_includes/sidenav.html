@@ -4,6 +4,9 @@
       <li class="navbar-brand">
         <a href="/">Riste Stojanov</a>
       </li>
+      <li>
+        <a href="/posts/page/1/" class="{% if currentPage startswith '/posts/' %}active{% endif %}">Blog</a>
+      </li>
       {% for page in collections.sortedNavigation %}
         {% unless page.url == "/" %}
           <li>
