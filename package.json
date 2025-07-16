@@ -7,13 +7,21 @@
     "build": "eleventy --incremental",
     "start": "eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "index": "npx -y pagefind --site _site"
+    "index": "npx -y pagefind --site _site",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.0"
+    "@11ty/eleventy": "^3.1.0",
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.3.0",
+    "prettier": "^3.6.2"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^1.0.4",
