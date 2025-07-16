@@ -15,7 +15,7 @@
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy": "^3.1.2",
     "@eslint/js": "^9.31.0",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.5",
