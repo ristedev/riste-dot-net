@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: layouts/default
 title: Riste Stojanov
 eleventyNavigation:
   order: 1
@@ -9,7 +9,7 @@ eleventyNavigation:
 
 ## Webgineer & privacy enthusiast
 
-Check out the [README](https://github.com/ristedev/riste-dot-net#ristenet) to see a full list of features, plugins and integrations implemented on this site.
+Check out the [README](https://github.com/ristedev/riste-dot-net#ristenet) to see a full list of features, plugins and integrations implemented on this metadata.
 
 ### Let's work together
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: layouts/default
 title: Self-hosted
 eleventyNavigation:
   order: 4

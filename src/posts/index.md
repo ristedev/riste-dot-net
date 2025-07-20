@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: layouts/post-index
 title: Blog
 eleventyNavigation:
   order: 2

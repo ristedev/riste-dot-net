@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: layouts/post
 title: Escaping the Complexity of Note-Taking Apps
 date: 2024-10-02
 category: tech
