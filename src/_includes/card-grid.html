@@ -2,9 +2,9 @@
   {%- for item in items %}
   <a href="{{ item.url }}" class="card-preview">
     <!-- Use item.data.title/excerpt for paginated items, fallback to item.title/description for others. -->
-    <h3 class="card-preview-title">
+    <h2 class="card-preview-title">
       {{ item.data.title | default: item.title }}
-    </h3>
+    </h2>
     <p class="card-preview-description">
       {{ item.data.excerpt | default: item.description }}
     </p>
