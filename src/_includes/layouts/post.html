@@ -12,7 +12,9 @@
             </div>
             <main>
                 <h1>{{ title }}</h1>
-                {{ content }}
+                <div class="post-content">
+                    {{ content }}
+                </div>
                 {% unless page.url == "/posts/" %}
                     <p>Published on: {{ date | date: "%b %d, %Y" }}</p>
                 {% endunless %}
